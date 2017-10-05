@@ -4,10 +4,13 @@ MAINTAINER Matthew Cuyar <matt@enctypeapparel.com>
 ##/
  # Install yarn and node
  #/
-RUN apk --no-cache --update --repository=http://dl-4.alpinelinux.org/alpine/edge/community add \
+RUN apk --no-cache --update \
+    --repository=http://dl-4.alpinelinux.org/alpine/edge/community \
+    --repository=http://dl-4.alpinelinux.org/alpine/edge/testing add \
     nodejs \
     nodejs-npm \
-    yarn
+    yarn \
+    wkhtmltopdf
 
 ##/
  # Copy files
