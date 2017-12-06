@@ -20,6 +20,7 @@ RUN apk --no-cache --update add \
     libstdc++ \
     libx11 \
     glib \
+    imagemagick \
     libxrender \
     libxext \
     libintl \
@@ -30,7 +31,8 @@ RUN apk --no-cache --update add \
     ttf-droid \
     ttf-freefont \
     ttf-liberation \
-    ttf-ubuntu-font-family
+    ttf-ubuntu-font-family \
+    php7-imagick
 
 ##/
  # Copy files

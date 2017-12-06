@@ -5,6 +5,8 @@ package:
     installed: true
   bash:
     installed: true
+  imagemagick:
+    installed: true
   php7:
     installed: true
   php7-ctype:
@@ -16,6 +18,8 @@ package:
   php7-fpm:
     installed: true
   php7-gd:
+    installed: true
+  php7-imagick:
     installed: true
   php7-json:
     installed: true
