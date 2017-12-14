@@ -55,6 +55,8 @@ package:
     installed: true
   php7-tokenizer:
     installed: true
+  php7-iconv:
+    installed: true
 port:
   tcp:8000:
     listening: true

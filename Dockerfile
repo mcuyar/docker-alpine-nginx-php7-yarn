@@ -32,7 +32,8 @@ RUN apk --no-cache --update add \
     ttf-freefont \
     ttf-liberation \
     ttf-ubuntu-font-family \
-    php7-imagick
+    php7-imagick \
+    php7-iconv
 
 ##/
  # Copy files
