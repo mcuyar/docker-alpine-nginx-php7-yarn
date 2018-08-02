@@ -5,8 +5,7 @@ MAINTAINER Matthew Cuyar <matt@enctypeapparel.com>
  # Install yarn and node
  #/
 RUN apk --no-cache --update \
-    --repository=http://dl-4.alpinelinux.org/alpine/edge/community \
-    --repository=http://dl-4.alpinelinux.org/alpine/edge/testing add \
+    --repository=http://dl-4.alpinelinux.org/alpine/v3.7/community add \
     nodejs \
     nodejs-npm \
     yarn
@@ -15,7 +14,8 @@ RUN apk --no-cache --update \
  # Install wkhtmltopdf
  # @link: https://github.com/madnight/docker-alpine-wkhtmltopdf
  #/
-RUN apk --no-cache --update add \
+RUN apk --no-cache --update \
+    --repository=http://dl-4.alpinelinux.org/alpine/v3.7/main add \
     libgcc \
     libstdc++ \
     libx11 \
