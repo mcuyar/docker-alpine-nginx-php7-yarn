@@ -92,3 +92,6 @@ EXPOSE 8000
 
 # Set the entrypoint
 ENTRYPOINT [ "/init" ]
+
+# Dev
+COPY dev-rootfs /
